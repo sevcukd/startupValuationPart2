@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarkStartup"
         mc:Ignorable="d"
-        Title="Startup" Height="1080" Width="1920"
+        Title="Startup" Height="768" Width="1366"
         WindowState="Maximized"
         WindowStyle="ThreeDBorderWindow">
     <Grid>
@@ -21,17 +21,17 @@
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="0.32*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Content="Нечітка оцінка ризику фінансування стартап проектів" 
+        <Label Content="Нечітка оцінка ризику фінансування стартап проєктів" 
                Grid.Column="0" Grid.ColumnSpan="2"
                HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="24"/>
+               FontSize="20"/>
         <ScrollViewer  Grid.Row="1" Grid.RowSpan="4">
 
 
             <StackPanel >
                 <!--1-->
                 <StackPanel Margin="10" Background="Aqua">
-                    <Label Content="Ризик втрати клієнтської бази (втрата великого клієнта – це значний
+                    <TextBlock Text="Ризик втрати клієнтської бази (втрата великого клієнта – це значний
 ризик суб'єкту, деколи аж до ліквідації його діяльності);" 
                HorizontalAlignment="Left"  VerticalAlignment="Top"
                FontSize="20"/>
@@ -569,6 +569,75 @@ on invested capital (ROIC) виходять за нормативні межі);
             </StackPanel>
         </ScrollViewer>
 
+        <ScrollViewer Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
+            <StackPanel>
+
+                    <TextBlock  Text="Результуюча терм оцінка по першій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="letterResForm1"/>
+
+                    <TextBlock  Text="Результуюча терм оцінка по другій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="letterResForm2"/>
+
+
+                    <TextBlock  Text="Результуюча терм оцінка по третій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="letterResForm3"/>
+
+
+                    <TextBlock  Text="Результуюча терм оцінка по четвертій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="letterResForm4"/>
+
+
+                    <TextBlock  Text="Агрегована оцінка по першій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="balResForm1"/>
+
+                    <TextBlock  Text="Агрегована оцінка по другій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="balResForm2"/>
+
+
+                    <TextBlock  Text="Агрегована оцінка по третій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="balResForm3"/>
+
+
+                    <TextBlock  Text="Агрегована оцінка по четвертій групі:" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" TextWrapping="Wrap"/>
+                    <TextBlock  Text="0" 
+               HorizontalAlignment="Center"  VerticalAlignment="Top"
+               FontSize="14" Margin="0,0,0,10" Name="balResForm4"/>
+
+            </StackPanel>
+        </ScrollViewer>
+        
+        
+        
         <Grid Grid.Column="0" Grid.Row="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
@@ -578,19 +647,19 @@ on invested capital (ROIC) виходять за нормативні межі);
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0">
                 <Border Background="Aqua" Width="80" Height="8" Margin="10"/>
-                <TextBlock HorizontalAlignment="Center">Групи критеріїв – «операційні ризики»</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="10">Групи критеріїв – «операційні ризики»</TextBlock>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <Border Background="LightSkyBlue" Width="80" Height="8" Margin="10"/>
-                <TextBlock HorizontalAlignment="Center">Групи критеріїв – «інвестиційні ризики»</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="10">Групи критеріїв – «інвестиційні ризики»</TextBlock>
             </StackPanel>
             <StackPanel Grid.Column="2">
                 <Border Background="LightSteelBlue" Width="80" Height="8" Margin="10"/>
-                <TextBlock HorizontalAlignment="Center">Групи критеріїв – «фінансові ризики»</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="10">Групи критеріїв – «фінансові ризики»</TextBlock>
             </StackPanel>
             <StackPanel Grid.Column="3">
                 <Border Background="LightYellow" Width="80" Height="8" Margin="10"/>
-                <TextBlock HorizontalAlignment="Center">Групи критеріїв – «ризики інноваційної діяльності»</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="10">Групи критеріїв – «ризики інноваційної діяльності»</TextBlock>
             </StackPanel>
 
         </Grid>
@@ -602,75 +671,13 @@ on invested capital (ROIC) виходять за нормативні межі);
 
 
         <Grid Grid.Column="1" Grid.Row="1">
-            <StackPanel VerticalAlignment="Center">
-                <TextBlock  Text="Результуюча терм оцінка по першій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="letterResForm1"/>
 
-                <TextBlock  Text="Результуюча терм оцінка по другій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="letterResForm2"/>
-
-
-                <TextBlock  Text="Результуюча терм оцінка по третій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="letterResForm3"/>
-
-
-                <TextBlock  Text="Результуюча терм оцінка по четвертій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="letterResForm4"/>
-
-            </StackPanel>
         </Grid>
 
 
 
         <Grid Grid.Column="1" Grid.Row="2">
-            <StackPanel VerticalAlignment="Center">
-                <TextBlock  Text="Агрегована оцінка по першій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="balResForm1"/>
 
-                <TextBlock  Text="Агрегована оцінка по другій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="balResForm2"/>
-
-
-                <TextBlock  Text="Агрегована оцінка по третій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="balResForm3"/>
-
-
-                <TextBlock  Text="Агрегована оцінка по четвертій групі:" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" TextWrapping="Wrap"/>
-                <TextBlock  Text="0" 
-               HorizontalAlignment="Center"  VerticalAlignment="Top"
-               FontSize="14" Margin="0,0,0,10" Name="balResForm4"/>
-
-            </StackPanel>
         </Grid>
 
         <Grid Grid.Column="1" Grid.Row="3">
@@ -700,7 +707,7 @@ on invested capital (ROIC) виходять за нормативні межі);
         </Grid>
 
 
-        <Grid Grid.Column="1" Grid.Row="4">
+        <Grid Grid.Column="1" Grid.Row="4" Grid.RowSpan="2">
             <StackPanel>
                 <TextBlock  Text="Агрегована оцінка:" 
                HorizontalAlignment="Center"  VerticalAlignment="Top"
@@ -714,10 +721,11 @@ on invested capital (ROIC) виходять за нормативні межі);
                 <TextBlock  Text="---" 
                HorizontalAlignment="Center"  VerticalAlignment="Top"
                FontSize="20" Margin="0,0,0,10" Name="conclusion" TextWrapping="Wrap"/>
+               <Button  FontSize="18"  Width="200" Height="40" Background="LimeGreen" Click="Button_Click">Розрахувати</Button>
             </StackPanel>
         </Grid>
 
 
-        <Button Grid.Column="1" Grid.Row="5" Margin="20" FontSize="18"  Background="LimeGreen" Click="Button_Click">Розрахувати</Button>
+        
     </Grid>
 </Window>
