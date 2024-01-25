@@ -73,53 +73,53 @@ namespace MarkStartup
 
             double[] quest = new double[24];
             double quest1 = Convert.ToDouble(question1.Text);
-            quest[0] = quest1;
+            quest[0] = quest1/10;
             double quest2 = Convert.ToDouble(question2.Text);
-            quest[1] = quest2;
+            quest[1] = quest2 / 10;
             double quest3 = Convert.ToDouble(question3.Text);
-            quest[2] = quest3;
+            quest[2] = quest3 / 10;
             double quest4 = Convert.ToDouble(question4.Text);
-            quest[3] = quest4;
+            quest[3] = quest4 / 10;
             double quest5 = Convert.ToDouble(question5.Text);
-            quest[4] = quest5;
+            quest[4] = quest5 / 10;
             double quest6 = Convert.ToDouble(question6.Text);
-            quest[5] = quest6;
+            quest[5] = quest6 / 10;
             double quest7 = Convert.ToDouble(question7.Text);
-            quest[6] = quest7;
+            quest[6] = quest7 / 10;
             double quest8 = Convert.ToDouble(question8.Text);
-            quest[7] = quest8;
+            quest[7] = quest8 / 10;
             double quest9 = Convert.ToDouble(question9.Text);
-            quest[8] = quest9;
+            quest[8] = quest9 / 10;
             double quest10 = Convert.ToDouble(question10.Text);
-            quest[9] = quest10;
+            quest[9] = quest10 / 10;
             double quest11 = Convert.ToDouble(question11.Text);
-            quest[10] = quest11;
+            quest[10] = quest11 / 10;
             double quest12 = Convert.ToDouble(question12.Text);
-            quest[11] = quest12;
+            quest[11] = quest12 / 10;
             double quest13 = Convert.ToDouble(question13.Text);
-            quest[12] = quest13;
+            quest[12] = quest13 / 10;
             double quest14 = Convert.ToDouble(question14.Text);
-            quest[13] = quest14;
+            quest[13] = quest14 / 10;
             double quest15 = Convert.ToDouble(question15.Text);
-            quest[14] = quest15;
+            quest[14] = quest15 / 10;
             double quest16 = Convert.ToDouble(question16.Text);
-            quest[15] = quest16;
+            quest[15] = quest16 / 10;
             double quest17 = Convert.ToDouble(question17.Text);
-            quest[16] = quest17;
+            quest[16] = quest17 / 10;
             double quest18 = Convert.ToDouble(question18.Text);
-            quest[17] = quest18;
+            quest[17] = quest18 / 10;
             double quest19 = Convert.ToDouble(question19.Text);
-            quest[18] = quest19;
+            quest[18] = quest19 / 10;
             double quest20 = Convert.ToDouble(question20.Text);
-            quest[19] = quest20;
+            quest[19] = quest20 / 10;
             double quest21 = Convert.ToDouble(question21.Text);
-            quest[20] = quest21;
+            quest[20] = quest21 / 10;
             double quest22 = Convert.ToDouble(question22.Text);
-            quest[21] = quest22;
+            quest[21] = quest22 / 10;
             double quest23 = Convert.ToDouble(question23.Text);
-            quest[22] = quest23;
+            quest[22] = quest23 / 10;
             double quest24 = Convert.ToDouble(question24.Text);
-            quest[23] = quest24;
+            quest[23] = quest24 / 10;
 
 
 
@@ -537,7 +537,7 @@ namespace MarkStartup
             balResForm3.Text = Math.Round(balRes3, 2).ToString();
             balResForm4.Text = Math.Round(balRes4, 2).ToString();
 
-
+            /// ДОБРЕ
 
             double x0 = 0;
             double xI = 0;
@@ -561,6 +561,7 @@ namespace MarkStartup
             }
             else
             {
+                
                 if (index1 == 0)
                     x0 = 20 - (Math.Sqrt((1 - balRes1) / 2)) * 20;
                 else if (index1 == 1)
